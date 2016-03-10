@@ -1,0 +1,339 @@
+@import  "https://fonts.googleapis.com/css?family=Montserrat:400,700";
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* FONTE MONTSERRAT LIGHT
+-------------------------------------------------- */
+@font-face {
+  font-family: 'Montserrat Light';
+  src: url(../fonts/montserrat-light-webfont.eot);
+  src: url(../fonts/montserrat-light-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/montserrat-light-webfont.woff2) format("woff2"),url(../fonts/montserrat-light-webfont.woff) format("woff"),url(../fonts/montserrat-light-webfont.ttf) format("truetype"),url(../fonts/montserrat-light-webfont.svg#montserratlight) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* GERAL
+-------------------------------------------------- */
+
+.section {
+  text-align: center;
+}
+
+br.mobile {
+  display: none;
+}
+
+@media (max-width : 480px) {
+  br.mobile {
+    display: block;
+  }
+}
+
+.fp-tooltip {
+  font-family: Montserrat !important;
+  display: none !Maimportant;
+  color: #333 !important;
+}  
+
+@media (max-width : 480px) {
+	#fp-nav.right {
+	  right: 0;
+	}
+}
+
+
+/* INÍCIO
+-------------------------------------------------- */
+
+.inicio {
+  background-color: #1e68c0;
+  transition: background-color .5s ease;
+  background-color: #fff;
+  background: #fff url(../imagens/scroll-down.png) no-repeat center bottom 25px;
+}
+
+.inicio.active {
+  background-color: #1e68c0;
+}
+
+	.inicio h1 {
+	  color: #fff;
+	  font: 700 48px Montserrat,"Helvetica Neue",Arial,Helvetica,sans-serif;
+	  margin-top: 40px;
+	}
+	
+	.inicio h2 {
+	  color: #fff;
+	  font: normal 24px Montserrat Light,"Helvetica Neue",Arial,Helvetica,sans-serif;
+	  margin-top: 10px;
+	}
+
+/* INÍCIO › MOBILE
+-------------------------------------------------- */
+
+@media (max-width : 480px) {
+.inicio {
+  background: #fff url(../imagens/scroll-down.png) no-repeat center bottom 10px;
+}
+
+  .inicio h1 {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .inicio h2 {
+    font-size: 16px;
+  }
+}
+
+/* PORTFOLIO
+------------------------------------------------------------ */
+
+.gray-bg {
+  background-color: #e8ebf0;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.portfolio .container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+	.portfolio .container img {
+	  max-width: 700px;
+	  width: 100%;
+	}
+
+	.portfolio .container h1 {
+	  color: #fff;
+	  font: 700 72px/62px Montserrat,"Helvetica Neue",Arial,Helvetica,sans-serif;
+	  text-align: left;
+	  color: #333;
+	  margin-left: -4px;
+	}
+	
+	.portfolio .container h1.right {
+	  text-align: right;
+	  margin-right: -4px;
+	}
+	
+	.portfolio .container h2 {
+	  color: #fff;
+	  font: normal 24px Montserrat Light,"Helvetica Neue",Arial,Helvetica,sans-serif;
+	  text-align: left;
+	  margin-bottom: 50px;
+	  color: #1e68c0;
+	}
+	
+	.portfolio .container h2.right {
+	  text-align: right;
+	}
+
+/* PORTFOLIO › MOBILE
+-------------------------------------------------- */
+
+@media (max-width : 480px) {
+	.portfolio h1,
+	.portfolio h1.right {
+	  text-align: center;
+	  font-size: 30px;
+	  line-height: 1;
+	  margin-bottom: 10px;
+	}
+	
+	.portfolio h2,
+	.portfolio h2.right {
+	  font-size: 16px;
+	  text-align: center;
+	}
+}
+
+/* CURRICULUM
+------------------------------------------------------------ */
+
+.curriculum h1 {
+  font: 700 36px Montserrat,"Helvetica Neue",Arial,Helvetica,sans-serif;
+  color: #333;
+  margin-bottom: 100px;
+}
+
+	.curriculum .container {
+	  padding: 20% 0;
+	}
+	
+		.curriculum .container a.download-cv {
+		  border: 3px solid #333;
+		  padding: 20px 30px;
+		  font: 400 24px Montserrat,"Helvetica Neue",Arial,Helvetica,sans-serif;
+		}
+		
+		.curriculum .container a.download-cv:link,
+		.curriculum .container a.download-cv:visited {
+		  color: #333;
+		  transition: background-color .3s ease;
+		  text-decoration: none;
+		}
+		
+		.curriculum .container a.download-cv:hover {
+		  background-color: #333;
+		  color: #e8ebf0;
+		}
+
+/* CURRICULUM › MOBILE
+------------------------------------------------------------ */
+
+@media (max-width : 480px) {
+  .curriculum .container a.download-cv {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .curriculum h1,.contato h1 {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+/* XP & EDUCAÇÃO
+------------------------------------------------------------ */
+
+.xp-educacao {
+  background-color: #1e68c0;
+  color: #fff;
+}
+
+	.xp-educacao h1 {
+	  font: 700 36px Montserrat,"Helvetica Neue",Arial,Helvetica,sans-serif;
+	  color: #fff;
+	  margin-top: 30px;
+	}
+
+	.xp-educacao .container {
+	  max-width: 940px;
+	  margin: 0 auto;
+	  display: table;
+	  padding: 5% 0;
+	}
+
+		.xp-educacao .container .xp-item {
+		  padding-bottom: 10px;
+		}
+		
+		.xp-educacao .container .xp-item h2 {
+		  font: 500 24px Montserrat,"Helvetica Neue",Arial,Helvetica,sans-serif;
+		  color: #fff;
+		}
+		
+		.xp-educacao .container .xp-item p.periodo {
+		  font: 400 16px Montserrat,"Helvetica Neue",Arial,Helvetica,sans-serif;
+		  color: #66a3d9;
+		  margin-bottom: 10px;
+		}
+
+		.xp-educacao .container .xp-item .xp-path-desk {
+		  margin: 0 auto;
+		}
+		
+		.xp-educacao .container .xp-item .xp-path-mobile {
+		  display: none;
+		}
+		
+		.xp-educacao .container .xp-item .periodo.periodo-mobile {
+		  display: none;
+		}
+
+/* XP & EDUCAÇÃO › MOBILE
+------------------------------------------------------------ */
+
+@media (max-width : 480px) {
+	.xp-educacao h1 {
+	  font-size: 30px;
+	  line-height: 1;
+	  margin-bottom: 15px;
+	}
+
+	.xp-educacao .container {
+	  padding-bottom: 0;
+	}
+	
+		.xp-educacao .container .xp-item:last-child {
+		  padding-bottom: 0;
+		}
+		
+		.xp-educacao .container .xp-item .xp-item h2 {
+		  font-size: 16px;
+		}
+		
+		.xp-educacao .container .xp-item .xp-path-desk {
+		  display: none;
+		}
+		
+		.xp-educacao .container .xp-item .xp-path-mobile {
+		  display: block;
+		  margin: 0 auto;
+		}
+		
+		.xp-educacao .container .xp-item .xp-item p.periodo {
+		  margin-bottom: 6px;
+		  display: none;
+		}
+		
+		.xp-educacao .container .xp-item .xp-item p.periodo.periodo-mobile {
+		  display: block;
+		}
+}
+
+
+/* CONTATO
+------------------------------------------------------------ */
+.contato h1 {
+  font: 700 36px Montserrat,"Helvetica Neue",Arial,Helvetica,sans-serif;
+  color: #333;
+  margin-bottom: 80px;
+}
+
+.contato p {
+  font: 700 54px Montserrat,"Helvetica Neue",Arial,Helvetica,sans-serif;
+  color: #333;
+  text-transform: uppercase;
+  color: #1e68c0;
+}
+
+	.contato p a:link,.contato p a:visited {
+	  color: #1e68c0;
+	  text-decoration: none;
+	}
+	
+	.contato p a:hover {
+	  text-decoration: underline;
+	}
+
+/* CONTATO › MOBILE
+-------------------------------------------------- */
+
+@media (max-width : 800px) {
+  .contato p {
+    font-size: 40px;
+  }
+}
+
+@media (max-width : 600px) {
+  .contato p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width : 480px) {  
+  .contato p {
+    font-size: 20px;
+  }
+}
+
